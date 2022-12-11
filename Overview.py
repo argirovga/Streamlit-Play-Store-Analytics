@@ -104,7 +104,7 @@ def load_data():
 
 
 def show_cleaning():
-    df = pd.read_csv('/Users/goshaargirov/Downloads/archive/googleplaystore.csv')
+    df = pd.read_csv('googleplaystore.csv')
 
     total = df.isnull().sum().sort_values(ascending=False)
     percent = (df.isnull().sum() / df.isnull().count()).sort_values(ascending=False)
