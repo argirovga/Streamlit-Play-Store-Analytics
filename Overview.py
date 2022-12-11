@@ -68,7 +68,7 @@ def load_lottieurl(url: str):
 
 @st.cache
 def load_data():
-    df = pd.read_csv('/Users/goshaargirov/Downloads/archive/googleplaystore.csv')
+    df = pd.read_csv('../googleplaystore.csv')
     df.dropna(how='any', inplace=True)
 
     temp_mas = [float(i[:len(i) - 1]) for i in df.Size if i != "Varies with device"]
