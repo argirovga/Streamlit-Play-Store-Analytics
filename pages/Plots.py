@@ -302,7 +302,7 @@ def separator(number=1):
 
 @st.cache
 def load_data():
-    df = pd.read_csv('../googleplaystore.csv')
+    df = pd.read_csv('googleplaystore.csv')
 
     df.dropna(how='any', inplace=True)
 
